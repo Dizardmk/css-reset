@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+:root {
+  // FONTS
+  --primary-font: 'Roboto', sans-serif;
+
+  // BG COLORS
+  --accent-bg: #d1d1d1;
+  --body-bg: #ffffff;
+  --container-bg: #ffffff;
+
+  // TEXT COLORS
+  --accent-cl: #d1d1d1;
+  --primary-title-cl: #000;
+  --secondary-title-cl: #ffffff;
+  --primary-text-cl: #000;
+  --secondary-text-cl: #ffffff;
+  --link-cl: #2979ff;
+  --link-hover-cl: #2962ff;
+
+  // CARD
+  --card-set-item: 1;
+  --gap-left: 30px;
+  --gap-top: 30px;
+
+  // ANIMATION SPEED
+  --fast: 0.3s;
+}
