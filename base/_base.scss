@@ -1,7 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  box-sizing: inherit;
   padding: 0;
   margin: 0;
 }
@@ -30,8 +34,7 @@ address {
   font-style: normal;
 }
 
-img,
-picture {
+img {
   display: block;
   max-width: 100%;
   height: auto;
