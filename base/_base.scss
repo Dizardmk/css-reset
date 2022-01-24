@@ -42,10 +42,11 @@ address {
   font-style: normal;
 }
 
-input,
 button,
-textarea,
-select {
+input,
+optgroup,
+select,
+textarea {
   font: inherit;
 }
 
