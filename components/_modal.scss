@@ -6,7 +6,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.55);
+  background-color: var(--backdrop-bg);
   z-index: 100;
   overflow: auto;
   transition: opacity 0.2s;
@@ -29,7 +29,7 @@
   padding: 76px 20px;
 
   border-radius: 12px;
-  background-color: #ffffff;
+  background-color: var(--modal-bg);
   background-position: center;
   background-size: contain;
   background-repeat: repeat-y;
@@ -40,20 +40,20 @@
   }
 }
 
-.btn-close {
+.modal-btn-close {
   position: absolute;
   right: 7px;
   top: 7px;
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
   width: 24px;
   height: 24px;
   border: none;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: var(--modal-bg);
   background-image: url('../images/icon-close.svg');
-  background-color: #fff;
   outline: none;
   cursor: pointer;
 }
