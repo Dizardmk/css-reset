@@ -85,6 +85,10 @@ address {
   font-weight: 700;
 }
 
+.icon {
+  fill: var(--accent-cl);
+}
+
 .visually-hidden {
   position: absolute !important;
   clip: rect(1px, 1px, 1px, 1px);
