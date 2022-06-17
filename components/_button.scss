@@ -1,21 +1,15 @@
 .btn {
+  cursor: pointer;
   display: inline-block;
-
   text-align: center;
   text-transform: uppercase;
   text-decoration: none;
   white-space: nowrap;
-
-  cursor: pointer;
-
+  color: var(--white-cl);
+  background-color: var(--accent-cl);
   border: 1px solid transparent;
   border-radius: 5px;
-
-  color: var(--secondary-text-cl);
-  background-color: var(--accent-cl);
-
   padding: 18px 28px;
-
   transition: color var(--fast) linear, background-color var(--fast) linear,
     border var(--fast) linear;
 

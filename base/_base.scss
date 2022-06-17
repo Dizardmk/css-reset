@@ -11,17 +11,29 @@ html {
 
 body {
   min-height: 100vh;
-  font-family: var(--primary-font);
+  font-family: var(--main-font);
   font-style: normal;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 1.5;
-  color: var(--primary-text-cl);
-  background-color: var(--body-bg);
-  margin: 0;
+  color: var(--main-cl);
+  background-color: var(--main-bg);
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+
+  @include mq(tablet) {
+    font-size: 16px;
+  }
+
+  @include mq(desktop) {
+    font-size: 18px;
+  }
+}
+
+address {
+  font-style: normal;
 }
 
 h1,
@@ -32,7 +44,14 @@ h5,
 h6,
 p {
   margin-top: 0;
-  margin-bottom: 0;
+}
+
+p {
+  margin-bottom: 20px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
 }
 
 h1,
@@ -49,15 +68,13 @@ textarea {
   font: inherit;
 }
 
+
 img {
   display: block;
   width: 100%;
   height: auto;
 }
 
-address {
-  font-style: normal;
-}
 
 .list {
   list-style: none;
@@ -67,8 +84,8 @@ address {
 }
 
 .link {
-  color: var(--link-cl);
   text-decoration: none;
+  color: var(--link-cl);
   transition: color var(--fast) linear;
 
   &:hover,
@@ -77,16 +94,25 @@ address {
   }
 }
 
-.accent-text {
+.accent-cl {
   color: var(--accent-cl);
 }
 
-.bold-text {
+.accent-bg {
+  background-color: var(--accent-bg);
+}
+
+.bold {
   font-weight: 700;
 }
 
 .icon {
   fill: var(--accent-cl);
+}
+
+// for modal
+.scroll-hidden {
+  overflow: hidden;
 }
 
 .visually-hidden {

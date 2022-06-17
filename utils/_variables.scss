@@ -1,21 +1,22 @@
 :root {
   // FONTS
-  --primary-font: 'Roboto', sans-serif;
-
-  // BG COLORS
-  --backdrop-bg: rgba(0, 0, 0, 0.55);
-  --modal-bg: #ffffff;
-  --body-bg: #ffffff;
-  --accent-bg: #4285f4;
+  --main-font: 'Roboto', sans-serif;
 
   // TEXT COLORS
+  --main-cl: #010101;
   --accent-cl: #4285f4;
-  --primary-title-cl: #010101;
-  --secondary-title-cl: #ffffff;
-  --primary-text-cl: #010101;
-  --secondary-text-cl: #ffffff;
+  --white-cl: #ffffff;
+  --title-cl: #010101;
   --link-cl: #2979ff;
   --link-hover-cl: #2962ff;
+
+  // BG COLORS
+  --main-bg: #ffffff;
+  --accent-bg: #010101;
+  --white-bg: #ffffff;
+  --backdrop-bg: rgba(0, 0, 0, 0.55);
+  --modal-bg: #ffffff;
+
 
   // CARD
   --card-set-item: 1;

@@ -7,14 +7,14 @@
   right: 0;
   bottom: 0;
   background-color: var(--backdrop-bg);
-  z-index: 100;
   overflow: auto;
-  transition: opacity 0.2s;
+  z-index: 100;
+  transition: opacity var(--fast) linear;
 
   &.is-hidden {
     visibility: hidden;
-    opacity: 0;
     pointer-events: none;
+    opacity: 0;
   }
 }
 
@@ -26,21 +26,17 @@
   width: 100%;
   max-width: 630px;
   min-height: 640px;
-  padding: 76px 20px;
-
-  border-radius: 12px;
   background-color: var(--modal-bg);
-  background-position: center;
-  background-size: contain;
-  background-repeat: repeat-y;
-  transition: transform 0.3s linear 0.2s;
+  border-radius: 12px;
+  transition: transform var(--fast) linear;
+  padding: 76px 20px;
 
   .is-hidden & {
     transform: translate(-50%, 100%) scale(0);
   }
 }
 
-.modal-btn-close {
+.modal-close {
   position: absolute;
   right: 7px;
   top: 7px;
@@ -50,10 +46,10 @@
   width: 24px;
   height: 24px;
   border: none;
-  background-position: center;
   background-repeat: no-repeat;
-  background-color: var(--modal-bg);
+  background-position: center;
   background-image: url('../images/icon-close.svg');
-  outline: none;
+  background-color: var(--modal-bg);
+  // outline: none;
   cursor: pointer;
 }
