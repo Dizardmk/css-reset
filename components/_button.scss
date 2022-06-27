@@ -9,9 +9,7 @@
   background-color: var(--accent-cl);
   border: 1px solid transparent;
   border-radius: 5px;
-  transition: color var(--fast) linear,
-  background-color var(--fast) linear, border var(--fast) linear;
-
+  transition: color var(--fast) linear, background-color var(--fast) linear, border var(--fast) linear;
   padding: 18px 28px;
 
   &:hover,
