@@ -1,15 +1,15 @@
 .backdrop {
-  visibility: visible;
-  opacity: 1;
   position: fixed;
   top: 0;
   left: 0;
-  right: 0;
   bottom: 0;
-  background-color: var(--backdrop-bg);
-  overflow: auto;
+  right: 0;
   z-index: 100;
+  background-color: var(--backdrop-bg);
   transition: opacity var(--fast) linear;
+  overflow: auto;
+  visibility: visible;
+  opacity: 1;
 
   &.is-hidden {
     visibility: hidden;
@@ -37,19 +37,18 @@
 }
 
 .modal-close {
+  cursor: pointer;
   position: absolute;
-  right: 7px;
   top: 7px;
+  right: 7px;
   display: flex;
   align-items: center;
   justify-content: center;
   width: 24px;
   height: 24px;
-  border: none;
   background-repeat: no-repeat;
   background-position: center;
   background-image: url('../images/icon-close.svg');
   background-color: var(--modal-bg);
-  // outline: none;
-  cursor: pointer;
+  border: none;
 }

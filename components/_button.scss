@@ -1,17 +1,18 @@
 .btn {
   cursor: pointer;
   display: inline-block;
-  text-align: center;
-  text-transform: uppercase;
-  text-decoration: none;
   white-space: nowrap;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
   color: var(--white-cl);
   background-color: var(--accent-cl);
   border: 1px solid transparent;
   border-radius: 5px;
+  transition: color var(--fast) linear,
+  background-color var(--fast) linear, border var(--fast) linear;
+
   padding: 18px 28px;
-  transition: color var(--fast) linear, background-color var(--fast) linear,
-    border var(--fast) linear;
 
   &:hover,
   &:focus {
